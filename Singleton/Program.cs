@@ -1,2 +1,11 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿namespace Singleton
+{
+    internal class Program
+    {
+        public static void Main()
+        {
+            var singleton = Logger.Instance;
+            singleton.Log("Helllo World!");
+        }
+    }
+}
